@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css_py/css.css">
+    <title>文件上传攻击</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            $(".Sidemenu ul li").hide();
+            $("#side1").click(function () {
+                $(".hide1").slideToggle(800)
+            });
+            $("#side2").click(function () {
+                $(".hide2").slideToggle(800)
+            });
+            $("#side3").click(function () {
+                $(".hide3").slideToggle(800)
+            });
+            $("#side4").click(function () {
+                $(".hide4").slideToggle(800)
+            });
+            $("#side5").click(function () {
+                $(".hide5").slideToggle(800)
+            });
+            $("#side0").click(function () {
+                $(".Sidemenu ul li").fadeToggle();
+            });
+            $("#title").click(function () {
+                $(".Sidemenu,#side0").fadeToggle();
+            });
+            $("#top").hide();
+            $(function() {
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 200) {
+                        $("#top").fadeIn(500);
+                    } else {
+                        $("#top").fadeOut(500);
+                    }
+                });
+                $("#top").click(function() {
+                    $('body,html').animate({scrollTop: 0}, 500);
+                })
+            })
+        })
+    </script>
+    <style>
+        .text{
+            box-shadow: 1px 1px 5px grey;
+        }
+    </style>
+</head>
+<body>
+<div id="top">回到顶部</div>
+<div class="menu">
+    <ul>
+        <li>
+            <p href="" class="head" id="title">Web网络安全</p>
+        </li>
+
+        <li id="title1">
+            <a href="#" class="head">基础知识</a>
+            <ul id="a">
+                <li><a href="">Web安全基础</a></li>
+            </ul>
+        </li>
+
+        <li id="title2">
+            <a href="#" class="head">网络攻击的基本防护与方法</a>
+            <ul id="b">
+                <li><a href="xss.html" target="_blank">XSS攻击</a></li>
+                <li><a href="">请求伪造漏洞与防护</a></li>
+                <li><a href="">SQL注入</a></li>
+                <li><a href="文件上传攻击.html" target="_blank">文件上传攻击</a></li>
+                <li><a href="">Web木马的原理</a></li>
+                <li><a href="">文件包含攻击</a></li>
+                <li><a href="命令执行攻击与防御.html" target="_blank">命令执行攻击与防御</a></li>
+            </ul>
+        </li>
+
+        <li id="title3">
+            <a href="#" class="head">业务逻辑安全</a>
+            <ul id="c">
+                <li><a href="">业务逻辑安全风险存在的前提</a></li>
+                <li><a href="">用户管理功能的实现</a></li>
+                <li><a href="">用户授权管理及安全分析</a></li>
+                <li><a href="">用户身份识别技术及安全防护</a></li>
+                <li><a href="">用户权限处理问题</a></li>
+                <li><a href="">业务流程安全基础防护方式总结</a></li>
+            </ul>
+        </li>
+
+        <li id="title4">
+            <a href="#" class="head">攻防视角下的Web安全防护</a>
+            <ul id="d">
+                <li><a href="">标准业务场景</a></li>
+                <li><a href="">用户视角下的所见范围探测</a></li>
+                <li><a href="">用户视角下的防护手段识别</a></li>
+                <li><a href="">常用防护方案</a></li>
+            </ul>
+        </li>
+
+        <li id="title5">
+            <a href="#" class="head" id="66">Web防护技术及开展方法</a>
+            <ul id="e">
+                <li><a href="">Web防护技术的演进</a></li>
+                <li><a href="">Web安全防护体系建议</a></li>
+                <li><a href="">渗透测试的方法及流程</a></li>
+                <li><a href="">快速代码审计实验</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="search" id="container">
+    <form id="form" action="../css_py/search.py" method="get">
+        <input id="search1" type="text" placeholder="search">
+    </form>
+</div>
+
+<p href="" class="head" id="side0">Web网络安全</p>
+<div class="Sidemenu">
+    <ul>
+        <li id="side_title1">
+            <p class="side_head" id="side1" style="border-top-left-radius: 5%;border-top-right-radius: 5%">基础知识</p>
+            <ul id="side_" class="hide1">
+                <li id="side_a"><a href="">1.Web安全基础</a></li>
+            </ul>
+        </li>
+
+        <li id="side_title2">
+            <p class="side_head" id="side2">网络攻击的基本防护与方法</p>
+            <ul id="side_b" class="hide2" style="display: block">
+                <li><a href="xss.html" target="_blank">1.XSS攻击</a></li>
+                <li><a href="">2.请求伪造漏洞与防护</a></li>
+                <li><a href="">3.SQL注入</a></li>
+                <li style="background-color: #a2a2a2"><a href="文件上传攻击.html" target="_blank">4.文件上传攻击</a></li>
+                <li><a href="">5.Web木马的原理</a></li>
+                <li><a href="">6.文件包含攻击</a></li>
+                <li><a href="命令执行攻击与防御.html" target="_blank">7.命令执行攻击与防御</a></li>
+            </ul>
+        </li>
+
+        <li id="side_title3">
+            <p class="side_head" id="side3">业务逻辑安全</p>
+            <ul id="side_c" class="hide3">
+                <li><a href="">1.业务逻辑安全风险存在的前提</a></li>
+                <li><a href="">2.用户管理功能的实现</a></li>
+                <li><a href="">3.用户授权管理及安全分析</a></li>
+                <li><a href="">4.用户身份识别技术及安全防护</a></li>
+                <li><a href="">5.用户权限处理问题</a></li>
+                <li><a href="">6.业务流程安全基础防护方式总结</a></li>
+            </ul>
+        </li>
+
+        <li id="side_title4">
+            <p class="side_head" id="side4">攻防视角下的Web安全防护</p>
+            <ul id="side_d" class="hide4">
+                <li><a href="">1.标准业务场景</a></li>
+                <li><a href="">2.用户视角下的所见范围探测</a></li>
+                <li><a href="">3.用户视角下的防护手段识别</a></li>
+                <li><a href="">4.常用防护方案</a></li>
+            </ul>
+        </li>
+
+        <li id="side_title5">
+            <p class="side_head" id="side5">Web防护技术及开展方法</p>
+            <ul id="side_e" class="hide5">
+                <li><a href="">1.Web防护技术的演进</a></li>
+                <li><a href="">2.Web安全防护体系建议</a></li>
+                <li><a href="">3.渗透测试的方法及流程</a></li>
+                <li><a href="">4.快速代码审计实验</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<br>
+<br>
+<br>
+<div class="text_body">
+<h2 style="text-align: center;top: -10px">文件上传攻击</h2>
+<div class="text">
+    <h4>简介</h4>
+    <pre style="color: black;font-size: 14px">
+     文件上传是WEB应用很常见的一种功能，本身是一项正常的业务需求，不存在什么问题。但如果在上传时没有对文件进行正确处理，则很可能会发生安全问题。本文将对文件上传的检测方式以及如
+     何绕过相应检测方式进行详细的分析，并提供针了对文件上传攻击的安全防护方法。文件上传攻击是指攻击者利用WEB应用对上传文件过滤不严，导致可以上传应用程序定义类型范围之外的文件到
+     Web服务器。比如可以上传一个网页木马，如果存放上传文件的目录刚好有执行脚本的权限，那么攻击者就可以直接得到一个WebShell。
+    </pre>
+</div>
+<br>
+<br>
+<div class="text">
+    <h4>原理</h4>
+    <pre style="color: black;font-size: 14px">
+    由于服务器端没有对用户上传的文件进行正确的处理，导致攻击者可以向某个可通过 Web 访问的目录上传恶意文件，并且该文件可以被Web服务器解析执行。
+    </pre>
+</div>
+<br>
+<hr>
+<br>
+<div style="box-shadow: 1px 1px 5px grey">
+    <p style="text-align: center;font-size: 18px;color:black;">以下是四个等级的后端防护代码，如果你看懂了代码，你就知道如何进行攻击和防范</p>
+</div>
+<br>
+<br>
+<p style="color: black;text-align: center">Low File Upload Source</p>
+<div class="text">
+    <code><pre>
+    if( isset( $_POST[ 'Upload' ] ) ) {
+        // Where are we going to be writing to?
+        $target_path  = DVWA_WEB_PAGE_TO_ROOT . "hackable/uploads/";
+        $target_path .= basename( $_FILES[ 'uploaded' ][ 'name' ] );
+
+        // Can we move the file to the upload folder?
+        if( !move_uploaded_file( $_FILES[ 'uploaded' ][ 'tmp_name' ], $target_path ) ) {
+            // No
+            echo '&lt;pre>Your image was not uploaded.&lt;/pre>';
+        }
+        else {
+            // Yes!
+            echo "&lt;pre>{$target_path} succesfully uploaded!&lt;/pre>";
+        }
+    }
+    </pre></code>
+</div>
+<br>
+<br>
+<p style="color: black;text-align: center">Medium File Upload Source</p>
+<div class="text">
+    <code><pre>
+    if( isset( $_POST[ 'Upload' ] ) ) {
+        // Where are we going to be writing to?
+        $target_path  = DVWA_WEB_PAGE_TO_ROOT . "hackable/uploads/";
+        $target_path .= basename( $_FILES[ 'uploaded' ][ 'name' ] );
+
+        // File information
+        $uploaded_name = $_FILES[ 'uploaded' ][ 'name' ];
+        $uploaded_type = $_FILES[ 'uploaded' ][ 'type' ];
+        $uploaded_size = $_FILES[ 'uploaded' ][ 'size' ];
+
+        // Is it an image?
+        if( ( $uploaded_type == "image/jpeg" || $uploaded_type == "image/png" ) &&
+            ( $uploaded_size < 100000 ) ) {
+
+            // Can we move the file to the upload folder?
+            if( !move_uploaded_file( $_FILES[ 'uploaded' ][ 'tmp_name' ], $target_path ) ) {
+                // No
+                echo '&lt;pre>Your image was not uploaded.&lt;/pre>';
+            }
+            else {
+                // Yes!
+                echo "&lt;pre>{$target_path} succesfully uploaded!&lt;/pre>";
+            }
+        }
+        else {
+            // Invalid file
+            echo '&lt;pre>Your image was not uploaded. We can only accept JPEG or PNG images.&lt;/pre>';
+        }
+    }
+
+    </pre></code>
+</div>
+<br>
+<br>
+<p style="color: black;text-align: center">High File Upload Source</p>
+<div class="text">
+    <code><pre>
+
+    if( isset( $_POST[ 'Upload' ] ) ) {
+        // Where are we going to be writing to?
+        $target_path  = DVWA_WEB_PAGE_TO_ROOT . "hackable/uploads/";
+        $target_path .= basename( $_FILES[ 'uploaded' ][ 'name' ] );
+
+        // File information
+        $uploaded_name = $_FILES[ 'uploaded' ][ 'name' ];
+        $uploaded_ext  = substr( $uploaded_name, strrpos( $uploaded_name, '.' ) + 1);
+        $uploaded_size = $_FILES[ 'uploaded' ][ 'size' ];
+        $uploaded_tmp  = $_FILES[ 'uploaded' ][ 'tmp_name' ];
+
+        // Is it an image?
+        if( ( strtolower( $uploaded_ext ) == "jpg" || strtolower( $uploaded_ext ) == "jpeg" || strtolower( $uploaded_ext ) == "png" ) &&
+            ( $uploaded_size < 100000 ) &&
+            getimagesize( $uploaded_tmp ) ) {
+
+            // Can we move the file to the upload folder?
+            if( !move_uploaded_file( $uploaded_tmp, $target_path ) ) {
+                // No
+                echo '&lt;pre>Your image was not uploaded.&lt;/pre>';
+            }
+            else {
+            // Yes!
+            echo "&lt;pre>{$target_path} succesfully uploaded!&lt;/pre>";
+            }
+            }
+            else {
+            // Invalid file
+            echo '&lt;pre>Your image was not uploaded. We can only accept JPEG or PNG images.&lt;/pre>';
+            }
+            }
+
+        </pre></code>
+</div>
+<br>
+<br>
+<p style="color: black;text-align: center">Impossible File Upload Source</p>
+<div class="text">
+    <code><pre>
+    if( isset( $_POST[ 'Upload' ] ) ) {
+        // Check Anti-CSRF token
+        checkToken( $_REQUEST[ 'user_token' ], $_SESSION[ 'session_token' ], 'index.php' );
+
+
+        // File information
+        $uploaded_name = $_FILES[ 'uploaded' ][ 'name' ];
+        $uploaded_ext  = substr( $uploaded_name, strrpos( $uploaded_name, '.' ) + 1);
+        $uploaded_size = $_FILES[ 'uploaded' ][ 'size' ];
+        $uploaded_type = $_FILES[ 'uploaded' ][ 'type' ];
+        $uploaded_tmp  = $_FILES[ 'uploaded' ][ 'tmp_name' ];
+
+        // Where are we going to be writing to?
+        $target_path   = DVWA_WEB_PAGE_TO_ROOT . 'hackable/uploads/';
+        //$target_file   = basename( $uploaded_name, '.' . $uploaded_ext ) . '-';
+        $target_file   =  md5( uniqid() . $uploaded_name ) . '.' . $uploaded_ext;
+        $temp_file     = ( ( ini_get( 'upload_tmp_dir' ) == '' ) ? ( sys_get_temp_dir() ) : ( ini_get( 'upload_tmp_dir' ) ) );
+        $temp_file    .= DIRECTORY_SEPARATOR . md5( uniqid() . $uploaded_name ) . '.' . $uploaded_ext;
+
+        // Is it an image?
+        if( ( strtolower( $uploaded_ext ) == 'jpg' || strtolower( $uploaded_ext ) == 'jpeg' || strtolower( $uploaded_ext ) == 'png' ) &&
+            ( $uploaded_size < 100000 ) &&
+            ( $uploaded_type == 'image/jpeg' || $uploaded_type == 'image/png' ) &&
+            getimagesize( $uploaded_tmp ) ) {
+
+            // Strip any metadata, by re-encoding image (Note, using php-Imagick is recommended over php-GD)
+            if( $uploaded_type == 'image/jpeg' ) {
+                $img = imagecreatefromjpeg( $uploaded_tmp );
+                imagejpeg( $img, $temp_file, 100);
+            }
+            else {
+                $img = imagecreatefrompng( $uploaded_tmp );
+                imagepng( $img, $temp_file, 9);
+            }
+            imagedestroy( $img );
+
+            // Can we move the file to the web root from the temp folder?
+            if( rename( $temp_file, ( getcwd() . DIRECTORY_SEPARATOR . $target_path . $target_file ) ) ) {
+                // Yes!
+                echo "&lt;pre>&lt;a href='${target_path}${target_file}'>${target_file}&lt;/a> succesfully uploaded!&lt;/pre>";
+            }
+            else {
+                // No
+                echo '&lt;pre>Your image was not uploaded.&lt;/pre>';
+            }
+
+            // Delete any temp files
+            if( file_exists( $temp_file ) )
+                unlink( $temp_file );
+        }
+        else {
+            // Invalid file
+            echo '&lt;pre>Your image was not uploaded. We can only accept JPEG or PNG images.&lt;/pre>';
+        }
+    }
+
+    // Generate Anti-CSRF token
+    generateSessionToken();
+    </pre></code>
+</div>
+</div>
+
+<br>
+</body>
+</html>

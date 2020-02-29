@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box_1{
+    height: 600px;
+    width: 1000px;
+    margin: 50px auto;
+
+}
+
+.box_2{
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    position: relative;
+    height: 400px;
+    width: 800px;
+    top: 100px;
+    left: 100px;
+}
+
+.box_3{
+    position: absolute;
+    margin: 100px 370px;
+}
+
+.door{
+    transition-duration: 2.0s;
+    display: inline-block;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+}
+
+.door:nth-child(1){
+    background: url("pic/1.jpg") center/cover no-repeat;
+    left: 0;
+}
+
+.door:nth-child(2){
+    background: url("pic/2.jpg") center/cover no-repeat;
+    right: 0;
+}
+
+.box_2:hover #door1{
+    transform-origin: left;
+    transform: rotateY(-90deg);
+}
+
+.box_2:hover #door2{
+    transform-origin: right;
+    transform: rotateY(90deg);
+}

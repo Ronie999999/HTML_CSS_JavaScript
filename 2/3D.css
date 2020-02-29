@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box_1{
+    height: 1000px;
+    width: 1000px;
+    border: 1px solid pink;
+    perspective: 600px;
+    margin: 50px auto;
+}
+.box_2{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    top: 350px;
+    left:350px;
+    transform-style: preserve-3d;
+    transform-origin: 150px 150px 150px;
+    transition-duration: 2.0s;
+}
+.box_3{
+    position: absolute;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    box-shadow:  0 0 4px darkblue;
+
+}
+.box_3:nth-child(1){
+    background: url("图片/1.gif") center/cover no-repeat;
+}
+
+.box_3:nth-child(2){
+    background: url("图片/2.gif") center/cover no-repeat;
+    left: -300px;
+    transform-origin: right;
+    transform: rotateY(90deg);
+}
+
+.box_3:nth-child(3){
+    background: url("图片/3.gif") center/cover no-repeat;
+    right: -300px;
+    transform-origin: left;
+    transform: rotateY(-90deg);
+}
+
+.box_3:nth-child(4){
+    background: url("图片/4.gif") center/cover no-repeat;
+    top: 0;
+    transform-origin: bottom;
+    transform: rotateX(-90deg);
+}
+
+.box_3:nth-child(5){
+    background: url("图片/5.gif") center/cover no-repeat;
+    bottom: 0;
+    transform-origin: top;
+    transform: rotateX(90deg);
+
+}
+
+.box_3:nth-child(6){
+    background: url("图片/6.gif") center/cover no-repeat;
+    transform: translateZ(300px);
+}
+
+.lab{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -250px;
+}
+label{
+    display: inline-block;
+    width: 85px;
+    height: 30px;
+    background-color: aqua;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#back:focus +input+input+input+input+input+div{
+    transform: rotateX(180deg);
+}
+#front:focus +input+input+input+input+div{
+    transform: rotateZ(0deg);
+}
+#bottom:focus +input+input+input+div{
+    transform: rotateX(90deg);
+}
+#right:focus +input+input+div{
+    transform: rotateZ(90deg);
+}
+#left:focus +input+div{
+    transform: rotateZ(-90deg);
+}
+#top:focus +div{
+    transform: rotateX(-90deg);
+}
+
+
+input{
+    position: absolute;
+    top: -99999px;
+}

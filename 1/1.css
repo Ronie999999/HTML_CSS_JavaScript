@@ -1,0 +1,78 @@
+.top_box{
+    height: 40px;
+    background-color: #333;
+    z-index: 2;
+}
+.top{
+    float: left;
+    margin-left: 75px;
+    color: white;
+    line-height: 40px;
+}
+.picture{
+    float: right;
+    right: 50px;
+    margin-right: 25px;
+}
+.background{
+    position: relative;
+    top: -20px;
+    z-index:-1;
+}
+
+.qifeiye1{
+    position: absolute;
+}
+
+.qifeiye2{
+    height: 40px;
+}
+
+#top1{
+    padding-left: 160px;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+.text1{
+    position: absolute;
+    font-size: xx-large;
+    right: 120px;
+    top: 350px;
+}
+.text2{
+    font-size: larger;
+    color:#c3c3c3;
+    position:absolute;
+    right:120px;
+    top:450px;
+}
+.text3{
+    width:250px;
+    height:50px;
+    border: 2px solid white;
+    color:white;
+    font-size:20px;
+    line-height: 50px;
+    text-align: center;
+    position:absolute;
+    right:120px;
+    top:520px;
+    transition-duration: 0.5s;
+}
+.text3:hover{
+    background-color: white;
+    opacity: 0.5;
+    color:#000;
+}

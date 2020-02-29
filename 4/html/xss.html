@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css_py/css.css">
+    <title>XSS攻击</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            $(".Sidemenu ul li").hide();
+            $("#side1").click(function () {
+                $(".hide1").slideToggle(800)
+            });
+            $("#side2").click(function () {
+                $(".hide2").slideToggle(800)
+            });
+            $("#side3").click(function () {
+                $(".hide3").slideToggle(800)
+            });
+            $("#side4").click(function () {
+                $(".hide4").slideToggle(800)
+            });
+            $("#side5").click(function () {
+                $(".hide5").slideToggle(800)
+            });
+
+            $("#side0").click(function () {
+                $(".Sidemenu ul li").fadeToggle();
+            });
+            $("#title").click(function () {
+                $(".Sidemenu,#side0").fadeToggle();
+            });
+            $("#top").hide();
+            $(function() {
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 200) {
+                        $("#top").fadeIn(500);
+                    } else {
+                        $("#top").fadeOut(500);
+                    }
+                });
+                $("#top").click(function() {
+                    $('body,html').animate({scrollTop: 0}, 500);
+                })
+            })
+
+        })
+    </script>
+    <style>
+        .text{
+            box-shadow: 1px 1px 5px grey;
+        }
+    </style>
+</head>
+<body>
+<div id="top">回到顶部</div>
+<div class="menu">
+    <ul>
+        <li>
+            <p class="head" id="title">Web网络安全</p>
+        </li>
+
+        <li id="title1">
+            <a href="#" class="head">基础知识</a>
+            <ul id="a">
+                <li><a href="">Web安全基础</a></li>
+            </ul>
+        </li>
+
+        <li id="title2">
+            <a href="#" class="head">网络攻击的基本防护与方法</a>
+            <ul id="b">
+                <li><a href="xss.html" target="_blank">XSS攻击</a></li>
+                <li><a href="">请求伪造漏洞与防护</a></li>
+                <li><a href="">SQL注入</a></li>
+                <li><a href="文件上传攻击.html" target="_blank">文件上传攻击</a></li>
+                <li><a href="">Web木马的原理</a></li>
+                <li><a href="">文件包含攻击</a></li>
+                <li><a href="命令执行攻击与防御.html" target="_blank">命令执行攻击与防御</a></li>
+            </ul>
+        </li>
+
+        <li id="title3">
+            <a href="#" class="head">业务逻辑安全</a>
+            <ul id="c">
+                <li><a href="">业务逻辑安全风险存在的前提</a></li>
+                <li><a href="">用户管理功能的实现</a></li>
+                <li><a href="">用户授权管理及安全分析</a></li>
+                <li><a href="">用户身份识别技术及安全防护</a></li>
+                <li><a href="">用户权限处理问题</a></li>
+                <li><a href="">业务流程安全基础防护方式总结</a></li>
+            </ul>
+        </li>
+
+        <li id="title4">
+            <a href="#" class="head">攻防视角下的Web安全防护</a>
+            <ul id="d">
+                <li><a href="">标准业务场景</a></li>
+                <li><a href="">用户视角下的所见范围探测</a></li>
+                <li><a href="">用户视角下的防护手段识别</a></li>
+                <li><a href="">常用防护方案</a></li>
+            </ul>
+        </li>
+
+        <li id="title5">
+            <a href="#" class="head" id="66">Web防护技术及开展方法</a>
+            <ul id="e">
+                <li><a href="">Web防护技术的演进</a></li>
+                <li><a href="">Web安全防护体系建议</a></li>
+                <li><a href="">渗透测试的方法及流程</a></li>
+                <li><a href="">快速代码审计实验</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="search" id="container">
+    <form id="form" action="../css_py/search.py" method="get">
+        <input id="search1" type="text" placeholder="search">
+    </form>
+</div>
+
+<p class="side_head" id="side0">Web网络安全</p>
+<div class="Sidemenu">
+    <ul>
+        <li id="side_title1">
+            <p class="side_head" id="side1">基础知识</p>
+            <ul id="side_" class="hide1">
+                <li id="side_a"><a href="">1.Web安全基础</a></li>
+            </ul>
+        </li>
+
+        <li id="side_title2">
+            <p class="side_head" id="side2">网络攻击的基本防护与方法</p>
+            <ul id="side_b" class="hide2" style="display: block">
+                <li style="background-color: #a2a2a2"><a href="xss.html" target="_blank">1.XSS攻击</a></li>
+                <li><a href="">2.请求伪造漏洞与防护</a></li>
+                <li><a href="">3.SQL注入</a></li>
+                <li><a href="文件上传攻击.html" target="_blank">4.文件上传攻击</a></li>
+                <li><a href="">5.Web木马的原理</a></li>
+                <li><a href="">6.文件包含攻击</a></li>
+                <li><a href="命令执行攻击与防御.html" target="_blank">7.命令执行攻击与防御</a></li>
+            </ul>
+        </li>
+
+        <li id="side_title3">
+            <p class="side_head" id="side3">业务逻辑安全</p>
+            <ul id="side_c" class="hide3">
+                <li><a href="">1.业务逻辑安全风险存在的前提</a></li>
+                <li><a href="">2.用户管理功能的实现</a></li>
+                <li><a href="">3.用户授权管理及安全分析</a></li>
+                <li><a href="">4.用户身份识别技术及安全防护</a></li>
+                <li><a href="">5.用户权限处理问题</a></li>
+                <li><a href="">6.业务流程安全基础防护方式总结</a></li>
+            </ul>
+        </li>
+
+        <li id="side_title4">
+            <p class="side_head" id="side4">攻防视角下的Web安全防护</p>
+            <ul id="side_d" class="hide4">
+                <li><a href="">1.标准业务场景</a></li>
+                <li><a href="">2.用户视角下的所见范围探测</a></li>
+                <li><a href="">3.用户视角下的防护手段识别</a></li>
+                <li><a href="">4.常用防护方案</a></li>
+            </ul>
+        </li>
+
+        <li id="side_title5">
+            <p class="side_head" id="side5">Web防护技术及开展方法</p>
+            <ul id="side_e" class="hide5">
+                <li><a href="">1.Web防护技术的演进</a></li>
+                <li><a href="">2.Web安全防护体系建议</a></li>
+                <li><a href="">3.渗透测试的方法及流程</a></li>
+                <li><a href="">4.快速代码审计实验</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<br>
+<br>
+<br>
+<div class="text_body">
+<h2 style="text-align: center;top: -10px">XSS攻击</h2>
+<div class="text">
+    <h4>简介</h4>
+    <pre style="color: black;font-size: 14px">
+    人们经常将跨站脚本攻击（Cross Site Scripting）缩写为CSS，但这会与层叠样式表（Cascading Style Sheets，CSS）的缩写混淆。因此，有人将跨站脚本攻击缩写为XSS。跨站脚本攻击
+    ，是最普遍的Web应用安全漏洞。这类漏洞能够使得攻击者嵌入恶意脚本代码到正常用户会访问到的页面中，当正常用户访问该页面时，则可导致嵌入的恶意脚本代码的执行，从而达到恶意攻击用户
+    的目的。攻击者可以使用户在浏览器中执行其预定义的恶意脚本，其导致的危害可想而知，如劫持用户会话，插入恶意内容、重定向用户、使用恶意软件劫持用户浏览器、繁殖XSS蠕虫，甚至破坏网
+    站、修改路由器配置信息等。
+    </pre>
+</div>
+<br>
+<br>
+<div class="text">
+    <h4>原理</h4>
+    <pre style="color: black;font-size: 14px">
+    HTML是一种超文本标记语言，通过将一些字符特殊地对待来区别文本和标记，例如，小于符号（<）被看作是HTML标签的开始，&lt;title>与&lt;/title>之间的字符是页面的标题等等。当动态页面中
+    插入的内容含有这些特殊字符（如<）时，用户浏览器会将其误认为是插入了HTML标签，当这些HTML标签引入了一段JavaScript脚本时，这些脚本程序就将会在用户浏览器中执行。所以，当这些
+    特殊字符不能被动态页面检查或检查出现失误时，就将会产生XSS漏洞。
+    </pre>
+</div>
+<br>
+<br>
+<div class="text">
+    <h4>特点</h4>
+    <pre style="color: black;font-size: 14px">
+    与钓鱼攻击相比，XSS攻击所带来的危害更大，通常具有如下特点：
+    1.由于XSS攻击在用户当前使用的应用程序中执行，用户将会看到与其有关的个性化信息，如账户信息或“欢迎回来”消息，克隆的Web站点不会显示个性化信息。
+    2.通常，在钓鱼攻击中使用的克隆Web站点一经发现，就会立即被关闭。
+    3.许多浏览器与安全防护软件产品都内置钓鱼攻击过滤器，可阻止用户访问恶意的克隆站点。
+    4.如果客户访问一个克隆的Web网银站点，银行一般不承担责任。但是，如果攻击者通过银行应用程序中的XSS漏洞攻击了银行客户，则银行将不能简单地推卸责任。 [2]
+    </pre>
+</div>
+<br>
+<hr>
+<br>
+<div style="box-shadow: 1px 1px 5px grey">
+    <p style="text-align: center;font-size: 18px;color:black;">以下是四个等级的后端防护代码，如果你看懂了代码，你就知道如何进行攻击和防范</p>
+</div>
+<br>
+<br>
+<p style="color: black;text-align: center">Low Reflected XSS Source</p>
+<div class="text">
+    <code><pre>
+            // Is there any input?
+    if( array_key_exists( "name", $_GET ) && $_GET[ 'name' ] != NULL ) {
+        // Feedback for end user
+        echo '&lt;pre>Hello ' . $_GET[ 'name' ] . &lt;/pre>';
+}
+    </pre></code>
+</div>
+<br>
+<br>
+<p style="color: black;text-align: center">Medium Reflected XSS Source</p>
+<div class="text">
+    <code><pre>
+        // Is there any input?
+    if( array_key_exists( "name", $_GET ) && $_GET[ 'name' ] != NULL ) {
+        // Get input
+        $name = str_replace( '&ltscript>', '', $_GET[ 'name' ] );
+
+        // Feedback for end user
+        echo "&lt;pre>Hello ${name}&lt;/pre>";
+        }
+    </pre></code>
+</div>
+<br>
+<br>
+<p style="color: black;text-align: center">High Reflected XSS Source</p>
+<div class="text">
+    <code><pre>
+        // Is there any input?
+    if( array_key_exists( "name", $_GET ) && $_GET[ 'name' ] != NULL ) {
+        // Get input
+        $name = preg_replace( '/<(.*)s(.*)c(.*)r(.*)i(.*)p(.*)t/i', '', $_GET[ 'name' ] );
+
+        // Feedback for end user
+        echo "&lt;pre>Hello ${name}&lt;/pre>";
+}
+    </pre></code>
+</div>
+<br>
+<br>
+<p style="color: black;text-align: center">Impossible Reflected XSS Source</p>
+<div class="text">
+    <code><pre>
+        // Is there any input?
+    if( array_key_exists( "name", $_GET ) && $_GET[ 'name' ] != NULL ) {
+        // Check Anti-CSRF token
+        checkToken( $_REQUEST[ 'user_token' ], $_SESSION[ 'session_token' ], 'index.php' );
+
+        // Get input
+        $name = htmlspecialchars( $_GET[ 'name' ] );
+
+        // Feedback for end user
+        echo "&lt;pre>Hello ${name}&lt;/pre>";
+}
+
+    // Generate Anti-CSRF token
+    generateSessionToken();
+    </pre></code>
+</div>
+</div>
+<br>
+</body>
+</html>

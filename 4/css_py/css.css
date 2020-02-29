@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#top{
+    z-index: 9;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    width: 38px;
+    height: 44px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 18px;
+}
+.menu{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    box-shadow: 1px 1px 5px grey;
+    z-index: 99;
+}
+body{
+    z-index: -5;
+}
+a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+#title1{
+    padding-left: 80px;
+}
+#title{
+    text-align: center;
+    font-size: 20px;
+    width: 250px;
+}
+.menu{
+    position: absolute;
+    z-index: 2;
+}
+.menu ul{
+    list-style: none;
+    color: black;
+}
+
+.menu ul li{
+    float: left;
+    width: 160px;
+    height: 40px;
+    font-size: small;
+}
+
+.menu ul li ul li{
+    background-color: white;
+    box-shadow: 1px 1px 5px grey;
+    text-align: center;
+    line-height: 40px;
+    width: 250px;
+    /*display: block;*/
+}
+
+#a,#b,#c,#d,#e{
+    display: none;
+}
+
+.head{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.menu ul li ul li:hover{
+    background-color: #a2a2a2;
+}
+
+.menu #title1:hover #a{
+    display: block;
+}
+.menu #title2:hover #b{
+    display: block;
+}
+.menu #title3:hover #c{
+    display: block;
+}
+.menu #title4:hover #d{
+    display: block;
+}
+.menu #title5:hover #e{
+    display: block;
+}
+
+
+.search{
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px grey;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    z-index: 3;
+}
+
+input{
+    text-align: center;
+    border-radius: 20px;
+    height: 30px;
+    width: 120px;
+    background-color: white;
+    border: none;
+    top: -30px;
+    color: #686868;
+    transform-style: preserve-3d;
+    transition-duration: 1.5s;
+
+}
+
+input:hover{
+    width: 240px;
+}
+
+
+
+
+#side_title{
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+
+}
+#sidetitle{
+    height: 52px;
+    font-size: 22px;
+
+}
+.Sidemenu{
+    right: 10px;
+    position: fixed;
+    width: 220px;
+    /*height: 10px;*/
+    top: 80px;
+    box-shadow: 1px 1px 3px grey;
+    z-index: 2;
+
+}
+
+.Sidemenu ul{
+    list-style: none;
+    top: 60px;
+    /*padding-top: 40px;*/
+}
+.Sidemenu ul li{
+    background-color: white;
+    text-align: center;
+
+}
+#side0{
+    /*z-index: 1;*/
+    display: block;
+    background-color: #ffffff;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    top: 40px;
+    width: 220px;
+    z-index: 10;
+    box-shadow: 1px 1px 5px grey;
+    font-size: 16px;
+
+}
+/*#side1{*/
+/*    border-top: 1px solid white;!important;*/
+/*}*/
+.side_head{
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    border-top: 1px solid black;
+}
+.Sidemenu ul li ul li{
+    line-height: 36px;
+    height: 36px;
+    font-size: 12px;
+    border-top: 1px dashed grey ;
+}
+.hide1,.hide2,.hide3,.hide4,.hide5{
+    display: none;
+}
+
+.Sidemenu ul li ul li:hover{
+    background-color: #a2a2a2;
+}
+.Sidemenu ul li ul li a{
+    color: black;
+}
+.text_body{
+    z-index: 1;
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    right: 10px;
+
+}
+
+.information{
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    width: 100%;
+}
+.concept,.laws,.Hidden_danger,.Solution,.Attack_form{
+    position: absolute;
+    box-shadow: 1px 1px 5px grey;
+    left: 15px;
+    /*height: 110px;*/
+    right: 15px;
+    font-size: 14px;
+}
+.concept{
+    height: 130px;
+}
+.Hidden_danger{
+    top: 170px;
+    height: 150px;
+}
+.Attack_form{
+    top: 340px;
+    height: 120px;
+}
+.Solution{
+    top: 480px;
+    height: 200px;
+}
+.laws{
+    top: 700px;
+    height: 950px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

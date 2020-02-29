@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="50cfa149-a8ee-4fd9-9e19-0ae6d762c114" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XEp7YIKFhcpbHdGbC5oPoDbtZL" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="命令执行攻击与防御.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/5/html/命令执行攻击与防御.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="文件上传攻击.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/5/html/文件上传攻击.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="文件上传攻击.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/5/html/文件上传攻击.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="文件上传攻击.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/5/html/文件上传攻击.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/5/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/5/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="tmp.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/5/tmp.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="xss.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/5/html/xss.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.xss.html" />
+        <item itemvalue="JavaScript Debug.命令执行攻击与防御.html" />
+        <item itemvalue="JavaScript Debug.tmp.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50cfa149-a8ee-4fd9-9e19-0ae6d762c114" name="Default Changelist" comment="" />
+      <created>1580620941414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580620941414</updated>
+      <workItem from="1580620943870" duration="4578000" />
+      <workItem from="1580709343875" duration="4726000" />
+      <workItem from="1580800997593" duration="16333000" />
+      <workItem from="1580971399695" duration="7984000" />
+      <workItem from="1580999401389" duration="5206000" />
+      <workItem from="1581055442327" duration="1947000" />
+      <workItem from="1581174843392" duration="4797000" />
+      <workItem from="1581402202365" duration="7897000" />
+      <workItem from="1581498027768" duration="246000" />
+      <workItem from="1581515219492" duration="4991000" />
+      <workItem from="1581581283423" duration="3625000" />
+      <workItem from="1581662752356" duration="81000" />
+      <workItem from="1581665080390" duration="1740000" />
+      <workItem from="1581696525043" duration="716000" />
+      <workItem from="1581697785833" duration="1347000" />
+      <workItem from="1581746568726" duration="14518000" />
+      <workItem from="1581829805172" duration="2596000" />
+      <workItem from="1581832446882" duration="1488000" />
+      <workItem from="1581863047579" duration="5438000" />
+      <workItem from="1581868616351" duration="1341000" />
+      <workItem from="1582006667830" duration="3000" />
+      <workItem from="1582012068806" duration="880000" />
+      <workItem from="1582282625606" duration="600000" />
+      <workItem from="1582293559643" duration="67000" />
+      <workItem from="1582295584413" duration="8051000" />
+      <workItem from="1582350534085" duration="5297000" />
+      <workItem from="1582367965447" duration="5579000" />
+      <workItem from="1582386047226" duration="609000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
