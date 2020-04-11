@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Blender</title>
+
+</head>
+<body>
+<p class="head">Welcome to blender learning space of Ronie</p>
+<div class="pic">
+    <ul class="menu">
+        <li class="li"><img src="pic/cloth.png" alt="1"></li>
+        <li class="li"><img src="pic/apple.png" alt="2"></li>
+        <li class="li" style="width: 1280px;"><img src="pic/pond.png" alt="3"></li>
+        <li class="li"><img src="pic/water.png" alt="4"></li>
+        <li class="li"><img src="pic/ice.png" alt="5"></li>
+    </ul>
+</div>
+
+<hr>
+<br>
+<p class="blender">BLENDER是一款开源免费的多平台全能三维动画制作软件</p>
+<br>
+<hr>
+<br>
+<hr>
+<p style="text-align: center; font-size: xx-large; display: block; position: relative; top: 30px">
+    关于blender
+</p>
+<p class="introduce">
+    BLENDER集建模，雕刻，绑定，粒子，动力学，动画，交互，材质，渲染，音频处理，视频剪辑以及运动跟踪，后期合成等等
+    的一系列动画短片制作解决方案，并以python为内建脚本，支持yafaray渲染器，商业创作永久免费
+</p>
+<hr>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript">
+    $('.pic>.menu>.li').finish();
+    $("li").mouseover(function(){
+        $(this).animate({"width":"1280px"},400).siblings('li').animate({"width":"64px"},400)
+    })
+</script>
+</body>
+</html>
