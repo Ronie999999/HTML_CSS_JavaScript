@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #282c34;
+}
+#datetime{
+    text-align: center;
+    border: none;
+    width: 100%;
+    height: 40px;
+    top: 30px;
+    position: absolute;
+    /*left: 50%;*/
+    /*margin-left: -350px;*/
+    font-size: 30px;
+    color: #6290ff;
+}
+
+#set_time{
+    font-size: large;
+    position: absolute;
+    /*left: 50%;*/
+    /*margin-left: -500px;*/
+    top: 100px;
+    color: #6290ff;
+    width: 100%;
+    height: 30px;
+}
+
+.time_set{
+    border: none;
+    display: inline-block;
+    width: 40%;
+    height: 30px;
+    font-size: larger;
+    position: relative;
+    left: 20%;
+
+}
+
+button{
+    /*top: 30px;*/
+    position: absolute;
+    display: inline-block;
+    font-size: larger;
+    color: #6290ff;
+    background-color: #282c34;
+    border: 1px solid #6290ff;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    outline: none;
+    border: none;
+    background-color: #282c34;
+
+}
+input::placeholder {
+    color: rgba(97, 218, 251, 0.5);
+}
+
+.left,.top,.bottom,.right{
+    position: absolute;
+    display: block;
+    background-color: #6290ff;
+    transition: transform 1s ease-in-out;
+}
+
+.top,
+.bottom {
+    left: 0;
+    right: 0;
+    height: 2px;
+
+}
+
+.left,
+.right {
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    transform: scaleY(0);
+}
+
+.top {
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition-delay: .2s;
+}
+.left {
+    left: 0;
+    transform-origin: bottom center;
+    transition-delay: .3s;
+}
+.bottom {
+    bottom: 0;
+}
+.right {
+    right: 0;
+    transform-origin: top center;
+    transition-delay: 0.1s;
+}
+
+input:focus ~ .right {
+    transform: scaleY(1);
+    transform-origin: bottom center;
+}
+input:focus ~ .left {
+    transform: scaleY(1);
+    transform-origin: top center;
+}
+input:focus ~ .top {
+    transform: scaleX(1);
+    transform-origin: right center;
+}
+.container{
+
+    height: 30px;
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+#_input{
+    color: #4ba7fe;
+}

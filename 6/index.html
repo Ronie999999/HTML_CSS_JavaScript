@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>TIME</title>
+</head>
+<body>
+<div id="datetime"></div>
+<div id="set_time">
+    <span class="time_set" style="width: 120px">设置的时间 </span>
+    <span class="time_set" id="date">XX/XX/XX XX:XX:XX</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" style="right: 30%" onclick="set()">设置</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" style="right: 25%" onclick='cancel()'>取消</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" style="right: 20%" onclick="shut_down()">关闭</button>
+</div>
+<div id="_container" class="container">
+    <input id="_input" style="text-align: center" type="text" name="username" placeholder="输入时间">
+    <span class="left"></span>
+    <span class="right"></span>
+    <span class="top"></span>
+    <span class="bottom"></span>
+    <button id="done" style="border: 2px solid #6290ff;position:relative;left: 50%;width: 100px;margin-left: -50px;top: 20px" onclick='Done()'>完成</button>
+</div>
+<audio src="やわらかな光 - やまだ豊.mp3" id="myaudio" controls="controls" loop="loop" hidden="hidden">
+
+</audio>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
