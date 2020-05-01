@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<p class="head">Welcome to blender learning space of Ronie</p>
+<p class="head">blender learning space of Ronie</p>
 <div class="pic">
     <ul class="menu">
         <li class="li"><img src="pic/cloth.png" alt="1"></li>
@@ -18,27 +18,44 @@
     </ul>
 </div>
 
-<hr>
+<!--<hr>-->
 <br>
-<p class="blender">BLENDER是一款开源免费的多平台全能三维动画制作软件</p>
+<p class="blender"><span style="font-weight: bold">BLENDER</span>是一款开源免费的多平台全能三维动画制作软件</p>
 <br>
-<hr>
+<!--<hr>-->
 <br>
-<hr>
-<p style="text-align: center; font-size: xx-large; display: block; position: relative; top: 30px">
+<!--<hr>-->
+<div class="information">
+    <p style="text-align: center;color: white; font-size: 30px; display: block; position: relative; top: 100px">
     关于blender
-</p>
-<p class="introduce">
+    </p>
+    <p class="introduce">
     BLENDER集建模，雕刻，绑定，粒子，动力学，动画，交互，材质，渲染，音频处理，视频剪辑以及运动跟踪，后期合成等等
     的一系列动画短片制作解决方案，并以python为内建脚本，支持yafaray渲染器，商业创作永久免费
-</p>
-<hr>
+    </p>
+</div>
+<p style="text-align: center; font-size: xx-large">部分资料</p>
+
+<div class="learn">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<!--<hr>-->
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script type="text/javascript">
-    $('.pic>.menu>.li').finish();
-    $("li").mouseover(function(){
-        $(this).animate({"width":"1280px"},400).siblings('li').animate({"width":"64px"},400)
+    var head = $(".pic>.menu>.li");
+    var pic = document.getElementsByTagName("div ul li");
+    var n = 1;
+    if (n === 5) n = 1;
+    $(head).mouseover(function(){
+        $(this).animate({"width":"1280px"},800).siblings('li').animate({"width":"64px"},800);
+    });
+    $(head).onmouseleave(function(){
+        $(pic[n]).animate({"width":"1280px"},400).siblings('li').animate({"width":"64px"},400);
+        n++;
     })
+
 </script>
 </body>
 </html>
