@@ -38,10 +38,10 @@ body{
     z-index: -1;
 }
 #button:hover::before{
-    animation: sun 8s infinite;
+    animation: sun linear 8s infinite;
 }
 #button:hover{
-    animation: sun 8s infinite;
+    animation: sun linear 8s infinite;
 }
 @keyframes sun {
     100%{
