@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppin", sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #adc885;
+}
+
+h1{
+    position: relative;
+    font-size: 60px;
+    color: #ccffbc;
+    text-transform: uppercase;
+    border-bottom: 10px solid #ccffbc;
+    letter-spacing: 5px;
+}
+
+h1:before{
+    content: "loading...";
+    border-bottom: 10px solid  #99c84e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #99c84e;
+    overflow: hidden;
+    animation: a 3s linear infinite;
+}
+
+@keyframes a {
+    from{
+        width: 0;
+    }
+    to{
+        width:100%;
+    }
+}

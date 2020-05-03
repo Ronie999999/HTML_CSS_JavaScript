@@ -7,11 +7,29 @@
 </head>
 <body>
 <div class="box">
-    <form action="post">
+    <form action="">
         <p class="head">Search</p>
-        <input type="text" placeholder="Type to search">
-        <input type="button" value="Search">
+        <input id="text" type="text" placeholder="Type to search">
+        <input type="button" value="Search" onclick="f()">
     </form>
 </div>
 </body>
+<script language="JavaScript">
+    function f() {
+        var a = document.getElementById("text");
+        console.log(a.innerText);
+        if (a.value && f1(a)) {
+            var url = "https://www.baidu.com/baidu?tn=monline_7_dg&ie=utf-8&wd=" + a.value;
+            window.open(url, '_blank');
+        }
+    }
+    function f1(a) {
+        for (var i = 0; i<(a.value).length; i++){
+            if (a.value[i] !== " "){
+                return true;
+            }
+        }
+        return false;
+    }
+</script>
 </html>

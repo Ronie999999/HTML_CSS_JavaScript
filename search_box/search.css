@@ -26,7 +26,7 @@ input{
     display: inline-block;
     font-size: 20px;
     box-sizing: border-box;
-    transition: 5s;
+    transition: 1s;
     font-family: Georgia, serif;
 }
 
@@ -47,10 +47,10 @@ input[type="button"]{
     border: none;
     outline: none;
     border-radius: 0 25px 25px 0;
-    background-color: #8c89ff;
+    background-color: #ffa955;
     color: white;
 }
 
 input[type="button"]:hover{
-    background-color: #ff00e1;
+    background-color: #3052a6;
 }

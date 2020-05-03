@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b68ac48-cd6a-4ca7-b14a-35e6436c3285" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../6/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../6/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../button/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../button/button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_register/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../login_register/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_register/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../login_register/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_register/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../login_register/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../love/love.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../love/love.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../love/love.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../love/love.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../search_box/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../search_box/search.css" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1bNw1i7LSb1eQ3GHTzB6jhTKFPc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="loading_page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/loading_page/loading_page.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.loading_page.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b68ac48-cd6a-4ca7-b14a-35e6436c3285" name="Default Changelist" comment="" />
+      <created>1588485645750</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588485645750</updated>
+      <workItem from="1588485646968" duration="2336000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
