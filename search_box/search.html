@@ -21,6 +21,7 @@
         if (a.value && f1(a)) {
             var url = "https://www.baidu.com/baidu?tn=monline_7_dg&ie=utf-8&wd=" + a.value;
             window.open(url, '_blank');
+            a.value = "";
         }
     }
     function f1(a) {
