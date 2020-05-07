@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="head">
+    <span id="title">学习空间</span>
+</div>
+<div class="container">
+    <div>
+        <div class="box box1" onmouseover="box_in(1)" onmouseout="box_out(1)">
+            <p id="p1">前端即网站前台部分，运行在PC端，移动端等浏览器上展现给用户浏览的网页。随着互联网技术的发展，HTML5，CSS3，前端框架的应用，跨平台响应式网页设计能够适应各种屏幕分辨率，完美的动效设计，给用户带来极高的用户体验。</p>
+            <a href="#" id="a1">前端设计</a>
+        </div>
+        <div class="background"></div>
+    </div>
+    <div>
+        <div class="box box2" onmouseover="box_in(2)" onmouseout="box_out(2)">
+            <p id="p2">网络安全是指网络系统的硬件、软件及其系统中的数据受到保护，不因偶然的或者恶意的原因而遭受到破坏、更改、泄露，系统连续可靠正常地运行，网络服务不中断。</p>
+            <a href="#" id="a2">网络安全</a>
+        </div>
+        <div class="background"></div>
+
+    </div>
+    <div>
+        <div class="box box3" onmouseover="box_in(3)" onmouseout="box_out(3)">
+        <p id="p3">BLENDER集建模，雕刻，绑定，粒子，动力学，动画，交互，材质，渲染，音频处理，视频剪辑以及运动跟踪，后期合成等等
+            的一系列动画短片制作解决方案，并以python为内建脚本，支持yafaray渲染器，商业创作永久免费</p>
+        <a href="#" id="a3">blender学习</a>
+        </div>
+        <div class="background"></div>
+    </div>
+</div>
+</body>
+<script>
+    function box_in(num) {
+        var title = document.getElementById("title");
+        var p = document.getElementById("p"+num);
+        var a = document.getElementById("a"+num);
+        title.style.color = "white";
+        p.style.color = "white";
+        a.style.color = "white";
+    }
+    function box_out(num) {
+        var title = document.getElementById("title");
+        var p = document.getElementById("p"+num);
+        var a = document.getElementById("a"+num);
+        title.style.color = "black";
+        p.style.color = "black";
+        a.style.color = "black";
+    }
+</script>
+</html>
