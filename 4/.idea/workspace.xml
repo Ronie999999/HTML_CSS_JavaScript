@@ -10,15 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50cfa149-a8ee-4fd9-9e19-0ae6d762c114" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Ronie/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ronie/.idea/Ronie.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ronie/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ronie/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ronie/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ronie/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Ronie/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ronie/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Ronie/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../home/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../home/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../login/login/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../login/login/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../login/login/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/../login/login/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../login/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../login/login/login.html" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +57,18 @@
     <property name="last_opened_file_path" value="E:/php/learn" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html (1)">
     <configuration name="命令执行攻击与防御.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/5/html/命令执行攻击与防御.html" useBuiltInWebServerPort="true">
@@ -147,6 +157,7 @@
       <workItem from="1586500157448" duration="1606000" />
       <workItem from="1586688741102" duration="19000" />
       <workItem from="1586849957339" duration="350000" />
+      <workItem from="1589427708625" duration="729000" />
     </task>
     <servers />
   </component>

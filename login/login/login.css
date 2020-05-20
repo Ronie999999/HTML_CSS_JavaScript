@@ -5,7 +5,7 @@
 
 body{
     background-color: #00a1a4;
-    font-family: "Poppin",sans-serif;
+    font-family: "Arial Narrow", sans-serif;
 }
 
 .btn{
@@ -15,7 +15,6 @@ body{
     position: absolute;
     left: 50%;
     top: 50%;
-    /*transform: translate(-50%,-50%);*/
     margin-left: -75px;
     margin-top: 25px;
     line-height: 50px;
@@ -29,14 +28,14 @@ body{
     animation: a 0.5s;
 }
 
-
-
 .user{
     top: 30%;
 }
+
 .password{
     top: 40%;
 }
+
 input{
     position: absolute;
     border: none;
@@ -78,10 +77,10 @@ p:hover{
         transform: scale(1,1);
     }
     75%,25%{
-        transform: scale(0.9,1.1);
+        transform: scale(0.8,1.2);
     }
     50%{
-        transform: scale(1.1,0.9);
+        transform: scale(1.2,0.8);
     }
 }
 
